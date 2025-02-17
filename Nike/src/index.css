@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gray-900: #202225;
+    --color-gray-800: #2f3136;
+    --color-gray-700: #36393f;
+    --color-gray-600: #4f545c;
+    --color-gray-400: #d4d7dc;
+    --color-gray-300: #e3e5e8;
+    --color-gray-200: #ebedef;
+    --color-gray-100: #f2f3f5;
+    --color-primary: #5865f2;
+
+    --color-custom-dark: #ff3737; 
+
+    /* background color */
+    --color-background-dark: #1f1f21;
+    --color-background-topBar: #111111;
+
+
+    /* width */
+    
+
+    /* height*/
+    --height-windows: 200rem;
+    
+  }
+
+  @layer components {
+    .btn{
+      @apply w-18 py-2 font-semibold rounded-3xl bg-white
+       text-background-dark hover:bg-gray-600
+       ;
+    }
+  }
+  
+
+  
