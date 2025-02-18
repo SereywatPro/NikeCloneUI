@@ -14,6 +14,7 @@ import {
   FaPersonHalfDress,
   FaPersonRays,
 } from "react-icons/fa6";
+import ContentDropdown from "./ContentDropdown";
 function CategoriesTopBar() {
   return (
     <div>
@@ -41,30 +42,37 @@ function CategoriesTopBar() {
             ></path>
           </svg>
         </div>
-        <div className="categoryItems md:max-lg:hidden sm:max-md:hidden @3xs:max-md:hidden ">
-          <ul className="flex *:me-5 xl:ms-50 font-semibold">
-            <li>
+        <div className="categoryItems md:max-lg:hidden sm:max-md:hidden @3xs:max-md:hidden  ">
+          <ul className="flex *:me-5 xl:ms-50 font-semibold ">
+            <li className="group duration-300 transition-all hover:underline underline-offset-0">
               <a href="#">New</a>
+              <ContentDropdown />
             </li>
-            <li>
+            <li className="dropDowLists group">
+              <ContentDropdown />
               <a href="#">Men</a>
             </li>
-            <li>
+            <li className="dropDowLists group">
               <a href="#">Women</a>
+              <ContentDropdown />
             </li>
-            <li>
+            <li className="dropDowLists group">
               <a href="#">Kids</a>
+              <ContentDropdown />
             </li>
-            <li>
+            <li className="dropDowLists group">
               <a href="#">Jordan</a>
+              <ContentDropdown />
             </li>
           </ul>
         </div>
         <div className="icon-media me-10">
           <ul className="flex *:me-5 items-center">
             <li className="group relative ">
-                          <div className="container-search absolute  xl:top-3 left-2 opacity-70 md:top-2.5 
-              sm:max-md:static @3xs:max-sm:top-2.5">
+              <div
+                className="container-search absolute  xl:top-3 left-2 opacity-70 md:top-2.5 
+              sm:max-md:static @3xs:max-sm:top-2.5"
+              >
                 <TopBarIcon icon={<FaSearch />} />
               </div>
               <input
@@ -101,7 +109,7 @@ const TopBarIcon = ({ icon }) => {
   return (
     <div className="text-white inline-flex ">
       <section>{icon}</section>
-    </div>
+    </div>      
   );
 };
 export default CategoriesTopBar;

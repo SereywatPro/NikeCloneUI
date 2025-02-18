@@ -34,5 +34,10 @@
     }
   }
   
+  @layer components{
+    .dropDowLists{
+      @apply duration-100 transition-all hover:underline underline-offset-0;
+    }
+  }
 
   
