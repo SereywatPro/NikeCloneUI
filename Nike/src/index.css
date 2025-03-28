@@ -28,16 +28,27 @@
 
   @layer components {
     .btn{
-      @apply w-18 py-2 font-semibold rounded-3xl bg-white
+      @apply w-18 py-2 font-semibold rounded-3xl bg-white text-center
        text-background-dark hover:bg-gray-600
        ;
     }
+
+    .btn-content1{
+      @apply 
+         w-18 py-2 font-semibold rounded-3xl bg-white text-center text-neutral-800 hover:bg-neutral-300 cursor-pointer
+      
+    }
+    .txf{
+      @apply text-neutral-400 cursor-pointer hover:underline
+    }
+    
   }
   
   @layer components{
     .dropDowLists{
       @apply duration-100 transition-all hover:underline underline-offset-0;
     }
+    
   }
 
   

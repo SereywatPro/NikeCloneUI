@@ -21,7 +21,7 @@ function MainShow() {
               Nike Basketball
             </p>
             <div className=" big-title text-7xl font-extrabold *:max-lg:text-5xl">
-              <p>BLACK LABEL</p>
+              <p>NEWEST LABEL</p>
               <p>COLLECTION</p>
             </div>
             <button className="btn mt-5 ">Shop</button>
